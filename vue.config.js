@@ -12,11 +12,11 @@ module.exports = {
   pluginOptions: {
     electronBuilder: {
       removeElectronJunk: false,
-      externals: ['sql.js'], //这里是你使用的原生模块名字列表，改成自己的即可
+      externals: ["sql.js"], //这里是你使用的原生模块名字列表，改成自己的即可
       nodeModulesPath: ['../../node_modules', './node_modules','../node_modules'],//这里是多个node_modules路径，按自己需要配置即可
       builderOptions: {
-        appId: "com.TrunkOS.app",
-        productName: "TrunkOS", //项目名，也是生成的安装文件名，即aDemo.exe
+        appId: "com.demosql.app",
+        productName: "demosql", //项目名，也是生成的安装文件名，即aDemo.exe
         copyright: "北京八号地信息技术有限公司 © 2021",
         directories: {
           output: "electron", //输出文件路径
